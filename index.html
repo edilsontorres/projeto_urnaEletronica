@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Urna Eletrônica</title>
+</head>
+
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d--esquerda">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome: FULANO DE TAL<br>
+                        Partido: PSDB<br>
+                        Vice-Prefeito: EDILSON
+                    </div>
+                </div>
+                <div class="d--direita">
+                    <div class="d-1-image">
+                        <img src="img/84.png" alt="">
+                        Prefeito
+                    </div>
+                    <div class="d-1-image small">
+                        <img src="img/84_2.png" alt="">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tela:<br>
+                CONFIRMA para CONFIRMAR este voto<br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado--linha">
+                <div class="botao" onclick="clicou('1')">1</div>
+                <div class="botao" onclick="clicou('2')">2</div>
+                <div class="botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="botao" onclick="clicou('4')">4</div>
+                <div class="botao" onclick="clicou('5')">5</div>
+                <div class="botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="botao" onclick="clicou('7')">7</div>
+                <div class="botao" onclick="clicou('8')">8</div>
+                <div class="botao" onclick="clicou('9')">9</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="botao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="botao branco" onclick="branco()">BRANCO</div>
+                <div class="botao corrige" onclick="corrige()">CORRIGE</div>
+                <div class="botao confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+    <!--Seção do folheto informativo-->
+    <section class="folheto">
+        <div class="folheto--direito">
+            <div class="area-folheto">
+                <div class="titulo">Para <b>Vereador</b> vote</div>
+                <div class="avatar"><img src="img/84.png"></div>
+                <div class="nome">Alonso Francisco Guimarães</div>
+                <div class="area-numeros">
+                    <div class="numero-1">1</div>
+                    <div class="numero-1">2</div>
+                    <div class="numero-1">3</div>
+                    <div class="numero-1">4</div>
+                    <div class="numero-1">5</div>
+                </div>
+                <div class="titulo">Para <b>Prefeito</b> vote</div>
+                <div class="avatar"><img src="img/84_2.png"></div>
+                <div class="nome">Fernão Mora Justo </div>
+                <div class="area-numeros">
+                    <div class="numero-1">1</div>
+                    <div class="numero-1">7</div>
+                </div>
+                <div class="nome"><span>Vice:</span> Jorão Barretos</div>
+            </div>
+
+        </div>
+        <div class="folheto--esquerdo">
+            <div class="area-folheto">
+                <div class="titulo">Para <b>Vereador</b> vote</div>
+                <div class="avatar"><img src="img/84.png"></div>
+                <div class="nome">Orlando Jorge de Albuquerque</div>
+                <div class="area-numeros">
+                    <div class="numero-1">1</div>
+                    <div class="numero-1">0</div>
+                    <div class="numero-1">2</div>
+                    <div class="numero-1">0</div>
+                    <div class="numero-1">3</div>
+                </div>
+                <div class="titulo">Para <b>Prefeito</b> vote</div>
+                <div class="avatar"><img src="img/84_2.png"></div>
+                <div class="nome">Gleison Barbaro Leal </div>
+                <div class="area-numeros">
+                    <div class="numero-1">1</div>
+                    <div class="numero-1">5</div>
+                </div>
+                <div class="nome"><span>Vice:</span> Maria Maria Di Caprio</div>
+            </div>
+        </div>
+    </section>
+    <script src="js/etapas.js"></script>
+    <script src="js/java.js"></script>
+
+</body>
+
+</html>
